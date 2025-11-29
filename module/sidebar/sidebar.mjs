@@ -22,7 +22,7 @@ function createSideBar(conTarget) {
     backgroundColor: "var(--primary-color)",
     // backgroundColor: "green",
     padding: "0 0 0 1rem",
-    borderRadius: "10px",
+    // borderRadius: "10px",
   });
 
   Object.assign(ul.style, {

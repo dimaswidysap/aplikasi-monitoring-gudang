@@ -13,27 +13,43 @@ $data = mysqli_fetch_assoc($result);
 <head>
     <meta charset="UTF-8">
     <title>Edit Barang</title>
+    <link rel="stylesheet" href="../../css/universal.css">
+    <link rel="stylesheet" href="../../css/update/edit.css">
 </head>
 <body>
 
-<h2>Edit Data Barang</h2>
+    
+    <form class="edit" action="update_proses.php" method="POST">
+    <h2>Edit Data Barang</h2>
 
-<form action="update_proses.php" method="POST">
-    <input type="hidden" name="kode_barang" value="<?= $data['kode_barang'] ?>">
+    <div>
+        <input type="hidden" name="kode_barang" value="<?= $data['kode_barang'] ?>">
+    </div>
 
-    <label>Nama Barang:</label><br>
-    <input type="text" name="nama_barang" value="<?= $data['nama_barang'] ?>"><br><br>
 
-    <label>Kategori:</label><br>
-    <input type="text" name="kategori" value="<?= $data['kategori'] ?>"><br><br>
+    <div>
+        <label>Nama Barang:</label><br>
+        <input type="text" name="nama_barang" value="<?= $data['nama_barang'] ?>"><br><br>
+    </div>
 
-    <label>Harga Jual:</label><br>
-    <input type="number" name="harga_jual" value="<?= $data['harga_jual'] ?>"><br><br>
+    <div>
+        <label>Kategori:</label><br>
+        <input type="text" name="kategori" value="<?= $data['kategori'] ?>"><br><br>
+    </div>
 
-    <label>Stok:</label><br>
-    <input type="number" name="stok" value="<?= $data['stok'] ?>"><br><br>
+    <div>
+        <label>Harga Jual:</label><br>
+        <input type="number" name="harga_jual" value="<?= $data['harga_jual'] ?>"><br><br>
+    </div>
 
-    <button type="submit">Simpan Perubahan</button>
+    <div>
+        <label>Stok:</label><br>
+        <input type="number" name="stok" value="<?= $data['stok'] ?>"><br><br>
+    </div>
+
+    <div>
+        <button type="submit"><span></span><span>Simpan Perubahan</span></button>
+    </div>
 </form>
 
 </body>

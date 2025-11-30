@@ -1,0 +1,47 @@
+.container-filter {
+  height: max-content;
+  width: 60%;
+  background-color: rgba(252, 252, 252, 0.664);
+  padding: 1rem;
+  margin: 5rem 0;
+  border-radius: 8px;
+  border: 2px solid var(--background-color);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 3px 8px, rgba(0, 0, 0, 0.24) 0px 3px 5px;
+}
+
+.container-filter form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.container-filter form div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.container-filter form div label {
+  color: var(--background-color);
+  font-weight: bold;
+}
+
+.container-filter form div select {
+  padding: 0.7rem 0.4rem;
+  border-radius: 5px;
+  border: none;
+}
+.container-filter form div select:focus {
+  border: none;
+  outline: none;
+}
+
+.container-filter form div button {
+  background-color: var(--primary-color);
+  width: max-content;
+  padding: 0.6rem 1rem;
+  border-radius: 3px;
+  font-weight: bold;
+  color: var(--background-color);
+  cursor: pointer;
+}

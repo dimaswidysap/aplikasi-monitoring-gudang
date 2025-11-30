@@ -23,6 +23,8 @@ function createSideBar(conTarget) {
     // backgroundColor: "green",
     padding: "0 1rem 0 1rem",
     borderRadius: "10px",
+    boxShadow:
+      "rgba(0, 0, 0, 0.12) 0px 3px 8px, rgba(0, 0, 0, 0.24) 0px 3px 5px",
   });
 
   Object.assign(ul.style, {

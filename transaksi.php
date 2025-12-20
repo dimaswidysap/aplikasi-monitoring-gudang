@@ -102,6 +102,37 @@ if (!$resultTransaksi) {
         </table>
        </section>
 
+       <table style="margin-top:5rem;" class="container-table">
+    <tr>
+        <td>ID Transaksi</td>
+        <td>Nama Pembeli</td>
+        <td>Kode Barang</td>
+        <td>Nama Barang</td>
+        <td>Jumlah Dibeli</td>
+        <td>Harga Satuan</td>
+        <td>Total Yg Harus Dibayar</td>
+    </tr>
+    <?php
+    $query = "SELECT dt.id_transaksi, dt.nama_pembeli, dt.kode_barang, b.nama_barang, 
+                     dt.jumlah, dt.harga_satuan 
+              FROM detail_transaksi dt 
+              JOIN barang b ON dt.kode_barang = b.kode_barang";
+    $result = mysqli_query($koneksi, $query);
+    while($row = mysqli_fetch_assoc($result)) {
+        $total = $row['jumlah'] * $row['harga_satuan'];
+        echo "<tr>
+                <td>{$row['id_transaksi']}</td>
+                <td>{$row['nama_pembeli']}</td>
+                <td>{$row['kode_barang']}</td>
+                <td>{$row['nama_barang']}</td>
+                <td>{$row['jumlah']}</td>
+                <td>Rp " . number_format($row['harga_satuan'], 0, ',', '.') . "</td>
+                <td>Rp " . number_format($total, 0, ',', '.') . "</td>
+              </tr>";
+    }
+    ?>
+</table>
+
   </section>
 
     </main>

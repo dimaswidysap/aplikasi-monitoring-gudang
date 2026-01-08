@@ -24,6 +24,9 @@
       <li>
         <a href="transaksi.php">Data Transaksi</a>
       </li>
+      <li class="sdefcd">
+        <a href="landing-page.html">Logout</a>
+      </li>
     </ul>
   </section>
 

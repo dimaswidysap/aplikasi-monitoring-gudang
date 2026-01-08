@@ -157,3 +157,8 @@ main section {
   font-weight: bold;
   font-size: 0.8em;
 }
+
+.sdefcd a {
+  background-color: rgb(149, 11, 11) !important;
+  color: rgb(202, 202, 202) !important;
+}

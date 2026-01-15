@@ -111,7 +111,7 @@ header {
 .text-content h1 {
   font-size: 48px;
   line-height: 1.2;
-  color: #484b6a; /* Warna ungu gelap seperti di gambar */
+  color: #484b6a;
   margin-bottom: 20px;
 }
 
@@ -125,10 +125,7 @@ header {
 /* Tombol Get Started */
 .btn-primary {
   display: inline-block;
-  background-color: #f1c40f; /* Warna kuning/oranye tombol */
-  /* Jika ingin menggunakan warna aksen hijau Anda, ganti baris atas dengan:
-       background-color: var(--background-color); 
-    */
+  background-color: #f1c40f;
   color: white;
   text-decoration: none;
   padding: 12px 35px;
